@@ -12,6 +12,7 @@
 <style>
     .theme{ display: table; margin-left: auto; margin-right: auto;
         font-size: 100px; font-family : cursive;
+        flex-shrink: 0;
     };
 
 </style>
@@ -21,7 +22,53 @@
   </div>
   <hr>
   </header>
-  
+  <style>
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .name{
+        text-align: center;
+        height: 400px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        font-size: 50px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .name:nth-child(1){
+        background-repeat: no-repeat;
+        background-size: 500px 500px;
+        border-right: 1px solid black;
+        
+    }
+    .name:nth-child(2){
+        background-size: 500px 500px;
+        background-repeat: no-repeat;
+        
+    }
+    .name:nth-child(3){
+        background-repeat: no-repeat;
+        background-size: 500px 500px;
+        border-left: 1px solid black;
+        
+    }
+    img{
+        height: 300px;
+
+    }
+  </style>
+  <div class = "container">
+    <div class = "name"> <img src="ksy.png" alt="이미지 1">
+    <div>Suyeon</div></div>
+
+    <div class = "name"><img src="eunbi .png" alt="이미지 2">
+    <div>Eunbi</div></div>
+    <div class = "name"><img src="kunhi.png" alt="이미지 3">
+    <div>Gunhi</div></div>
+  </div>
+ 
+
 
 </body>
 </html>
