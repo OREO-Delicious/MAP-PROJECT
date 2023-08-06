@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                width: 800px;
+                border: 1px solid gray;
+            }
+            header{
+                border-bottom: 1px solid gray;
+                padding-left: 20px;
+            }
+            footer{
+                border-top: 1px solid gray;
+                padding: 20px;
+                text-align: center;
+            }
+            .content{
+                display: flex;
+            }
+            .content nav{
+                border-right: 1px solid gray;
+            }
+            .content aside{
+                border-left: 1px solid gray;
+            }
+            nav, aside{
+                flex-basis: 150px;
+                flex-shrink: 0;
+            }
+            main{
+                padding: 10px;
+            }
+            nav{
+                order: 0;
+            }
+            main{
+                order: 1;
+            }
+            aside{
+                order: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="name">
+                    <h1>MAP NEWS</h1>
+                </div>
+            </header>
+
+            <section class="content">
+                <main>
+                    <div class="write">
+                        <h2>기사 제목</h2>
+
+                    <div class="day">날짜 기자</div>
+                    </div>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </main>
+                <aside>
+                    AD
+                </aside>
+            </section>
+            <footer>
+                <a href="https://opentutorials.org/course/1">홈페이지</a>
+            </footer>
+        </div>
+            
+    </body>
+</html>
