@@ -2,53 +2,93 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <style>
-            body{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .container{
-                display: flex;
-                flex-direction: column;
-                width: 800px;
-                border: 1px solid gray;
-            }
-            header{
-                border-bottom: 1px solid gray;
-                padding-left: 20px;
-            }
-            footer{
-                border-top: 1px solid gray;
-                padding: 20px;
-                text-align: center;
-            }
-            .content{
-                display: flex;
-            }
-            .content nav{
-                border-right: 1px solid gray;
-            }
-            .content aside{
-                border-left: 1px solid gray;
-            }
-            nav, aside{
-                flex-basis: 150px;
-                flex-shrink: 0;
-            }
-            main{
-                padding: 10px;
-            }
-            nav{
-                order: 0;
-            }
-            main{
-                order: 1;
-            }
-            aside{
-                order: 2;
-            }
-        </style>
+
+        .name{
+            display: flex;
+            justify-content: center;
+            font-size: 50px; 
+            font-family: cursive;
+            flex-shrink: 0;
+            border-bottom: 1px solid black;
+        }
+
+        .write{
+            display: inline-block; 
+            font-size: 25px;
+            border-bottom: 1px solid gray; 
+        }
+
+        .day{
+            float: left; 
+            color: gray; 
+            font-size: 12px;
+            padding-bottom: 15px; 
+        }
+
+        .first_image{
+            width: 500px;
+            margin: auto;
+            display: block;
+
+        }
+
+        footer{
+            border-top:1px solid gray;
+            padding:20px;
+            text-align: center;
+        }
+
+
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title{
+            display: flex;
+            text-align: center;
+        }
+
+        aside{
+            flex-basis: 230px;
+            flex-shrink: 0;
+            padding-left: 150px;
+            padding-top:10px ;
+        }
+
+        main{
+            padding: 10px;
+            padding-left: 300px;
+            padding-right: 100px;
+            flex-basis: 1000px;
+        }
+
+
+        .content{
+            padding-top: 20px;
+            white-space: pre-line;
+            font-size: 20px;
+            text-align: justify;
+            padding-left: 90px;
+
+        }
+
+        .side{
+            border-left: 1px solid black;
+            padding-left: 100px;
+        }
+
+    
+
+        .search{
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+
     </head>
     <body>
         <div class="container">
@@ -58,25 +98,85 @@
                 </div>
             </header>
 
-            <section class="content">
+            <section class="title">
                 <main>
                     <div class="write">
-                        <h2>기사 제목</h2>
+                        <h2>대전 ‘교사 칼부림’ 20대 피의자 어머니 “아들 주장은 망상”</h2>
 
-                    <div class="day">날짜 기자</div>
-                    </div>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
+                    <div class="day">김창희 기자입력 2023. 8. 7. 16:30수정 2023. 8. 7. 20:33</div>
+                </div>
+
+                <div class="content">
+                    <div class="first_image"><img src="은비 뉴스 사진1.jpg" title="지난 4일 교사흉기피습 사건이 발생한 대전 대덕구 고교 정문앞에 취재진이 모여 있다."></div>
+                    <span>학교에 침입해 교사를 흉기로 찌른 혐의를 받는 20대 남성의 어머니가 “당시 안 좋은 기억 때문에 범행했다”는 아들의 주장에 대해 참고인 조사에서 ‘망상’이라고 진술한 것으로 나타났다.
+                    </span>
+                    <br>
+
+                    <span>7일 경찰 등에 따르면 살인미수 혐의를 받는 A씨 어머니의 진술로 범행 동기가 정신질환에 따른 망상일 수 있다는 주장에 무게가 실리고 있다.
+                    </span>
+                    <br>
+
+                    <span>A씨는 2021년부터 지난해까지 인근 병원에서 조현병과 우울증 진단을 받고 의사로부터 입원 치료를 권유받았으나 입원도 치료도 하지 않은 것으로 확인됐다.
+                    </span>
+                    <br>
+
+                    <span>경찰 조사에서 A씨는 “내가 원해서 치료받지 않았다”는 의미로 진술한 것으로 전해졌다.
+                    </span>
+                    <br>
+
+                    <span>A씨가 자신이 다니던 고교에 근무했던 다른 일부 교사에게도 피해 교사 B씨처럼 ‘안 좋은 기억’이 있다고도 주장하고 있는 것으로 조사됐다. 참고인 조사 대상에는 해당 교사들도 포함돼 있다.
+                    </span>
+                    <br>
+
+                    <span>A씨에게는 이번 사건과 관계없는 다른 종류의 전과가 있던 것으로도 드러났다.
+                    </span>
+                    <br>
+
+                    <span>경찰은 참고인 조사를 통해 A씨 주장에 대한 진위와 자세한 범행 동기에 대해 구체적으로 파악할 방침이다.
+                    </span>
+                    <br>
+
+                    <span>A씨는 지난 4일 오전 9시 24분쯤 대전 대덕구의 한 고등학교에 침입, 교사 B(49)씨의 얼굴과 가슴, 팔 부위 등을 흉기로 7차례 찌르고 달아난 혐의를 받는다.
+                    </span>
+                    <br>
+
+                    <span>학교 정문을 통과해 교내로 들어온 A씨는 2층 교무실로 올라가 B씨를 찾았고, B씨가 수업 중이란 말을 듣고 복도에서 기다리고 있다가 수업이 끝나고 교무실 세면대에서 손을 씻는 B씨를 발견, 교무실 안으로 들어가 흉기를 휘둘렀다.
+                    </span>
+                    <br>
+
+                    <span>가까스로 행정실로 몸을 피한 B씨는 병원으로 옮겨졌으며, 의식이 일부 돌아오는 등 상태가 다소 호전됐으나 아직 피해자 진술을 하기에는 무리가 있는 것으로 알려졌다.
+                    </span>
+                    <br>
+                </div>
                 </main>
+
                 <aside>
-                    AD
+                    <section class="side">
+                        <div class="search">
+                            <h3>함께 찾은 검색어</h3>
+                            <li>칼부림</li>
+                            <br>
+                            <li>대전 칼부림</li>
+                            <br>
+                            <li>대전 교사</li>
+                            <br>
+                        </div>
+
+                        <div class="news">
+                            <h3>이 시각 추천 뉴스</h3>
+                        </div>
+                        <h4>11년 전 산바 닮은 태풍 카눈... 한반도 중심 관통,</h4>
+
+                        <h4>“너무 귀여워” 생후 30일 맞은 韓 쌍둥이 판다 귀여..</h4>
+
+                        <h4>저커버그, 머스크와 격투 26일 제안…머스크 “엑스</h4>
+
+                    </section>
+
                 </aside>
             </section>
             <footer>
-                <a href="https://opentutorials.org/course/1">홈페이지</a>
+                Copyrights ⓒMAP NEWS, 무단 전재 및 재배포 금지
             </footer>
         </div>
             
