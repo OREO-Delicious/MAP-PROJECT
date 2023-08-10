@@ -10,18 +10,16 @@
             display: flex;
             flex-direction: column;
         }
-        
+       
         .name{
+           justify-content: center;
+           display: flex;
            font-family: cursive;
-           text-align: center; 
            font-size: xx-large;
+           flex-shrink: 0;
            background-color: antiquewhite;
            border-bottom: 2px solid gray;
            border-top: 2px solid gray;
-        }
-
-        aside{
-            float: right;
         }
 
         main{
@@ -31,11 +29,22 @@
             flex-basis: 1000px;
         }
 
+        .article{
+            display: flex;
+        }
+
+        aside{
+            flex-shrink: 0;
+            float: right;
+            flex-basis: 230px;
+            padding-left: 100px;
+            padding-top: 10px;
+        }
+
         .title{
             font-size: 22px;
-            margin-left: 60px;
+            margin-left: 55px;
             padding-bottom: 10px;
-            width: 850px;
         }
 
         .day{
@@ -46,7 +55,7 @@
         }
 
         .content{
-            width: 700px;
+            width: 650px;
             padding-top: 20px;
             margin-left: 70px;
         }
@@ -54,18 +63,11 @@
         .article_img{
             width: 650px;
             padding-top: 30px;
-            margin-left: 50px;
+            margin-left: 20px;
         }
 
-        .article_content{
-            margin-left: 50px;
-            white-space: pre-line;
-            font-size: 17px;
-            text-align: center;
-        }
-
-        .article_content2{
-            margin-left: 50px;
+        .article_content, .article_content2{
+            margin-left: 35px;
             white-space: pre-line;
             font-size: 17px;
             text-align: center;
@@ -86,9 +88,63 @@
         .side{
             border-left: 3px solid gray;
             padding-left: 50px;
-            width: 100px;
+            padding-top: 100px;
+            width: 350px;
+            margin-right: 20px;
+         }
+
+        .another{
+            float: left;
+            border-bottom: 2px solid black;
         }
 
+        .news1_title, .news2_title{
+            padding-top: 10px;
+        }
+
+        .news1_img, .news2_img{
+            padding-top: 20px;
+            width: 250px;
+        }
+
+        .news1{
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+        }
+
+        .news2{
+            padding-top: 20px;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+        }
+
+        .ad_img{
+            width: 300px;
+            padding-top: 100px;
+        }
+
+        .sns_title{
+            padding-top: 60px;
+            border-bottom: 2px solid black;
+        }
+
+        .sns_content{
+            padding-top: 15px;
+        }
+
+        .ad2{
+            width: 350px;
+            padding-top: 400px;
+        }
+
+        .final_logo{
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+            background-color: antiquewhite;
+            text-align: center;
+            font-family: cursive;
+            padding: 15px;      
+        }
     </style>
 </head>
 
@@ -113,7 +169,7 @@
                         에스파 윈터가 16일 오후 서울 종로구 경복궁에서 진행된 '구찌 2024 크루즈 패션쇼'에 참석해 포즈를 취하고 있다. 2023.05.16
                     </div>
                     <div class="article_content">
-                        <p>그룹 에스파 윈터가 스타랭킹 여자아이돌 3위에 올랐다.<br> 윈터는 7월 20일 오후 3시 1분부터 7월 27일 오후 3시까지 진행된 7월 4주(91차) 
+                        <p>그룹 에스파 윈터가 스타랭킹 여자아이돌 3위에 올랐다.<br> 윈터는 7월 20일 오후 3시 1분부터 7월 27일 오후 3시까지 진행된 7월 4주 
                             스타아이돌 여자 랭킹 투표에서 1,409표를 얻어 3위에 이름을 올렸다.</p> 
                         <p>1위는 7,825표를 획득한 레드벨벳 아이린이 이름을 올렸으며, 2위는 2,023표를 얻은 소녀시대 태연이다. 이외에도 레드벨벳 웬디(560표), 
                             소녀시대 윤아(455표), 마마무 솔라(185표) 등이 뒤를 이었다.</p>
@@ -135,24 +191,42 @@
             <aside>
                 <section class="side">
                     <div class="another">
-                        <h3>다른 뉴스 보기...</h3>
+                        <h3>이 시각 주요뉴스</h3>
                     </div>
-                    <div class="new1">
+                    <div class="news1">
+                        <img class="news1_img" src="수연 사진-2.jpg" alt="추가사진">
                         <div class="news1_title">
                             오마이걸 측 "효정, 코로나19 확진..5일간 일정 중단"(전문)[공식]
                         </div>
                     </div>
                     <div class="news2">
+                        <img class="news2_img" src="수연 사진-3.jpg" alt="추가사진2">
                         <div class="news2_title">
                             "주호민 아들 전학 온다고 해서"…맘카페 '들썩'
                         </div>
                     </div>
                     <div class="ad">
-                        ad
+                        <img class="ad_img" src="수연 광고 사진.jpg" alt="광고사진">
                     </div>
+                    <div class="SNS_NEWS">
+                        <div class="sns_title"><h3>SNS 관심기사</h3></div>
+                        <div class="sns_content">
+                            <li>태풍 오는데 ＇난 괜찮아＇...대피 ..</li><br>
+                            <li>탁현민 ″文 정부 집권 7년 차, 태..</li><br>
+                            <li>잼버리 개최지 의원들 ＇크루즈 연수＇..</li><br>
+                            <li>탁현민 ″BTS 그런 대우받아선 안돼..</li><br>
+                            <li>잼버리 대원 입국도 안 했는데 숙소 ..</li><br>
+                        </div>
+                    </div>
+                    <img class="ad2" src="수연 광고 사진2.png" alt="광고사진2">
                 </section>
             </aside>
         </section>
+        <footer>
+            <div class="final_logo">
+                <a href="mainpage.html">MAP NEWS</a>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
