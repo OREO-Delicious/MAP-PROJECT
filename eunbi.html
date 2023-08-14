@@ -6,6 +6,15 @@
 
         <style>
 
+        .outline{
+            border: 2px solid black;
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-right: 10px;
+            width: 900px;
+            background-color: lightgray;
+        }
+
         .title{
             display: flex;
             text-align: center;
@@ -14,7 +23,7 @@
 
         main{
             padding: 10px;
-            padding-left: 300px;
+            padding-left: 100px;
             padding-right: 100px;
             flex-basis: 1000px;
         }
@@ -23,16 +32,18 @@
         .name{
             display: flex;
             justify-content: center;
-            font-size: 50px; 
+            font-size: 40px; 
             font-family: cursive;
             flex-shrink: 0;
             border-bottom: 1px solid black;
+            background-color: lightgray;
         }
 
         .write{
             display: inline-block; 
-            font-size: 25px;
+            font-size: 30px;
             border-bottom: 1px solid gray; 
+            padding: 30px;
         }
 
         .day{
@@ -62,25 +73,93 @@
             font-size: 20px;
             text-align: justify;
             padding-left: 90px;
+            padding-right: 90px;
 
         }
 
         .side{
             border-left: 1px solid black;
             padding-left: 100px;
+            width: 300px;
+            padding-top: 100px;
         }
 
 
         .search{
-            border-bottom: 1px solid black;
-            padding: 10px;
+            border: 2px solid black;
+            background-color: lightgray;
         }
+
+        .search h3{
+            border-bottom: 1px solid gray;
+            font-size: 20px; 
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+
+        }
+
+        .search li{
+            font-size: 20px; 
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .news{
+            border: 2px solid black;
+            width: 350px;
+            margin-top: 200px;
+            background-color: lightgray;
+        }
+
+        .news h3{
+            border-bottom: 1px solid black;
+            font-size: 20px; 
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 20px;
+        }
+
+        .news h4{
+            font-size: 20px; 
+            padding-left: 40px;
+            padding-right: 40px;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+        }
+
+        .news h5{
+            font-size: 20px; 
+            padding-left: 40px;
+            padding-right: 40px;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+        }
+
+        .news h6{
+            font-size: 20px; 
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 1px;
+        }
+
+        .ad{
+            border-left: 1px solid black;
+            padding-left: 60px;
+            padding-top: 300px;
+        }
+
 
         footer{
             border-top:1px solid gray;
             padding:20px;
             text-align: center;
+            background-color: lightgray;
         }
+
+
+
+
     </style>
 
     </head>
@@ -94,6 +173,7 @@
 
             <section class="title">
                 <main>
+                    <div class="outline">
                     <div class="write">
                         <h2>대전 ‘교사 칼부림’ 20대 피의자 어머니 “아들 주장은 망상”</h2>
 
@@ -123,30 +203,39 @@
                     <p>가까스로 행정실로 몸을 피한 B씨는 병원으로 옮겨졌으며, 의식이 일부 돌아오는 등 상태가 다소 호전됐으나 아직 피해자 진술을 하기에는 무리가 있는 것으로 알려졌다.
                     </p>
                 </div>
+                </div>
                 </main>
 
                 <aside>
                     <section class="side">
                         <div class="search">
                             <h3>함께 찾은 검색어</h3>
-                            <li>칼부림</li>
+                            <li><a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%B9%BC%EB%B6%80%EB%A6%BC">칼부림</a></li>
                             <br>
-                            <li>대전 칼부림</li>
+                            <li><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EB%8C%80%EC%A0%84+%EC%B9%BC%EB%B6%80%EB%A6%BC&oquery=%EC%B9%BC%EB%B6%80%EB%A6%BC&tqi=iLpo7dprvOsssjH5UjRssssssDK-446841">대전 칼부림</a></li>
                             <br>
-                            <li>대전 교사</li>
+                            <li><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EB%8C%80%EC%A0%84+%EA%B5%90%EC%82%AC&oquery=%EB%8C%80%EC%A0%84+%EC%B9%BC%EB%B6%80%EB%A6%BC&tqi=iLpoBsprvOsssjFv3P4ssssstYV-188898">대전 교사</a></li>
                             <br>
                         </div>
 
                         <div class="news">
                             <h3>이 시각 추천 뉴스</h3>
-                        </div>
+                        
+                        <div class="second_image"><img src="은비 추천 뉴스1.jpg" width=250px alt="기사사진">
                         <h4>11년 전 산바 닮은 태풍 카눈... 한반도 중심 관통,</h4>
 
-                        <h4>“너무 귀여워” 생후 30일 맞은 韓 쌍둥이 판다 귀여..</h4>
+                        <div class="third_image"><img src="은비 추천 뉴스2.jpg" width=250px alt="기사사진">
+                        <h5>“너무 귀여워” 생후 30일 맞은 韓 쌍둥이 판다 귀여..</h5>
 
-                        <h4>저커버그, 머스크와 격투 26일 제안…머스크 “엑스</h4>
+                        <div class="fourth_image"><img src="은비 추천 뉴스3.jpg" width=250px alt="기사사진">
+                        <h6>저커버그, 머스크와 격투 26일 제안…머스크 “엑스</h6>
 
+                        </div>
+                    
                     </section>
+                    <div class="ad">
+                        <div class="ad_image"><img src="은비 광고.jpg" width=400px alt="기사사진">
+                    </div>
 
                 </aside>
             </section>
